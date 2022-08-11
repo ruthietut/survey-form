@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autodocs Survey form</title>
+    <link
+      rel="icon"
+      href="/survey form/assets/Auto-docs-white.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <img
+        src="/survey form/assets/Auto-Docs-Transparent.png"
+        alt="autodocs logo"
+        width="200px"
+        height="200px"
+      />
+    </nav>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Autodocs Survey Form</h1>
+        <p id="description" class="description text-center">
+          Thank you for taking the time to help us improve in our services
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        
+
+        <div class="form-group">
+          <p>Which option best describes your services?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select option</option>
+            <option value="slow">Slow Service</option>
+            <option value="normal">Normal Service</option>
+            <option value="fast">Fast Service</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Would you recommend Autodocs to a friend?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            />Definitely</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />Maybe</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />Not sure</label
+          >
+        </div>
+        
+
+        <div class="form-group">
+          <p>What is your favorite feature of Autodocs?</p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="response">Quick responsee</option>
+            <option value="instruction">Detailed instructions</option>
+            <option value="delivery">Fast delivery</option>
+            <option value="update">Updates</option>
+          </select>
+        </div>
+        <div class="form-group">
+            <p>
+              What would you like to see improved?
+              <span class="clue">(Check all that apply)</span>
+            </p>
+  
+            <label
+              ><input
+                name="prefer"
+                value="deliveries"
+                type="checkbox"
+                class="input-checkbox"
+              />Our Deliveries</label
+            >
+            <label>
+              <input
+                name="prefer"
+                value="response"
+                type="checkbox"
+                class="input-checkbox"
+              />Response</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="updates"
+                type="checkbox"
+                class="input-checkbox"
+              />Latest Updates</label
+            >
+          </div>
+
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
